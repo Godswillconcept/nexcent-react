@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    z-index: 1001 !important;
+}
+
+.btn-register {
+    @apply bg-brandPrimary rounded text-base text-white px-7 py-2 hover:bg-neutralDGrey transition-all duration-300 hover:-translate-y-4;
+}
+
+.btn-signup {
+    @apply bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralDGrey;
+}
+
+.btn-login {
+    @apply hidden lg:flex items-center text-brandPrimary hover:border-2 hover:text-gray-900 hover:rounded-full transition-all hover:border-brandPrimary py-2 px-4 ;
+}
+
+.service-card {
+    @apply px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full;
+}
+
+.service-card-layout {
+    @apply mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12;
+}
+
+.service-icon {
+    @apply bg-tintT5 mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl;
+}
+
+.blog-card {
+    @apply text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12 hover:border-b-4 hover:scale-95  transition-all duration-300 border-indigo-600;
+}
